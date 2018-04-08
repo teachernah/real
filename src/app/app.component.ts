@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   allowNewServer = false;
   serverId = 10;
   serverStatus = 'offline';
+  serverName = 'Testserver';
 
   getServerStatus() {
     return this.serverStatus;
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit {
   onCreateServer() {
     this.serverCreationStatus = 'Server was created!';
   }
-  onUpdateServerName(event: any) {
-    console.log(event);
+  onUpdateServerName(event: Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
   }
  }
