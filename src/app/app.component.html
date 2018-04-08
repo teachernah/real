@@ -1,2 +1,12 @@
-<input type="text" [(ngModel)]="title">
-<p>preview:{{ title }}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <input type="text" [(ngModel)]="title">
+      <hr>
+      <h1 class="name">{{ title }}</h1>
+      <textarea name="title" class="red" cols="60" rows="10">{{ title }}</textarea>
+      <p>server with ID {{ serverId }} is {{ serverStatus }} </p>
+      <p>server with ID {{ serverId }} is {{ serverStatus }} </p>
+    </div>
+  </div>
+</div>
