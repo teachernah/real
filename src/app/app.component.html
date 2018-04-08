@@ -5,8 +5,10 @@
       <hr>
       <h1 class="name">{{ title }}</h1>
       <textarea name="title" class="red" cols="60" rows="10">{{ title }}</textarea>
-      <p>server with ID {{ serverId }} is {{ serverStatus }} </p>
-      <p>server with ID {{ serverId }} is {{ serverStatus }} </p>
+      <br>
+      <button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+      <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} </p>
+      <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} </p>
     </div>
   </div>
 </div>
