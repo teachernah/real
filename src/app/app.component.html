@@ -23,9 +23,9 @@
       [ngStyle]="{backgroundColor: getColor()}"
       [ngClass]="{online: serverStatus === 'online'}"
       *ngFor="let server of servers">
-        {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+        {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus()}}
       </p>
-      <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} </p>
+      <!-- <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} </p> -->
       <app-server></app-server>
     </div>
   </div>

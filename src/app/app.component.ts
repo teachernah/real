@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   serverStatus = 'offline';
   serverName = 'Testserver';
   serverCreated = false;
+  // log = [];
   servers = ['Testserver', 'Testserver2'];
 
   getServerStatus() {
