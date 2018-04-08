@@ -21,10 +21,12 @@
       <!-- <p>{{ serverName }}</p> -->
       <p 
       [ngStyle]="{backgroundColor: getColor()}"
-      [ngClass]="{online: serverStatus === 'online'}">
+      [ngClass]="{online: serverStatus === 'online'}"
+      *ngFor="let server of servers">
         {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
       </p>
       <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }} </p>
+      <app-server></app-server>
     </div>
   </div>
 </div>

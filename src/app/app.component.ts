@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   serverStatus = 'offline';
   serverName = 'Testserver';
   serverCreated = false;
+  servers = ['Testserver', 'Testserver2'];
 
   getServerStatus() {
     return this.serverStatus;
@@ -29,6 +30,7 @@ export class AppComponent implements OnInit {
   }
 
   onCreateServer() {
+    this.servers.push(this.serverName);
     this.serverCreated = true;
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
