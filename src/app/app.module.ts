@@ -5,14 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
+import { HeaderComponent } from './header/header.component';
+
 
 
 const appRoutes: Routes = [];
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
