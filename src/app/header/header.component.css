@@ -11,9 +11,18 @@
 }
 
 .form-control{
-    width: 300px;
-    height: 40px;
+    width: 400px;
+    height: 50px;
 }
 .search{
+    height: 60px;
+    width: 70px;
+}
+
+.btn.btn-primary{
+    width: 60px;
+}
+
+.btn.btn-primary{
     max-height: 0px;
 }
