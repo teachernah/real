@@ -7,14 +7,22 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { BodyComponent } from './body/body.component';
 
 
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+  // {path: 'month', component: BodyComponent },
+  // {path: 'intrest', component: BodyComponent },
+  // {path: 'featured', component: BodyComponent },
+  // {path: 'hot', component: BodyComponent },
+  // {path: 'week', component: BodyComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
