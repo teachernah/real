@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '';
-  search = false;
-  onSearch() {
-    this.search = true;
+
+loadedFeature = 'intrest';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 
  }
