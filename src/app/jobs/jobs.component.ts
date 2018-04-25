@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-jobs',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jobs.component.css']
 })
 export class JobsComponent implements OnInit {
-
+feature = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  featureSelected() {
+    this.feature.emit();
   }
 
 }

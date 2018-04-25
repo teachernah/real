@@ -10,24 +10,30 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { IntrestComponent } from './body/intrest/intrest.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { FeatureComponent } from './feature/feature.component';
+import { HotComponent } from './hot/hot.component';
+import { WeekComponent } from './week/week.component';
+import { TagsComponent } from './tags/tags.component';
+import { UsersComponent } from './users/users.component';
+import { MonthComponent } from './month/month.component';
 
 
 
 const appRoutes: Routes = [
   // {path: '', component: HeaderComponent},
-  {path: 'questions', component: BodyComponent},
+  {path: 'questions', component: IntrestComponent},
   {path: 'jobs', component: JobsComponent },
-  {path: 'tags', component: HeaderComponent},
-  {path: 'users', component: HeaderComponent},
+  {path: 'tags', component: TagsComponent},
+  {path: 'users', component: UsersComponent},
   {path: 'profile', component: HeaderComponent},
   {path: 'inbox', component: HeaderComponent},
   {path: 'achivements', component: HeaderComponent},
   {path: 'help', component: HeaderComponent},
- {path: 'month', component: BodyComponent },
+ {path: 'month', component: MonthComponent },
   {path: 'intrest', component: IntrestComponent },
-  {path: 'featured', component: BodyComponent },
-  {path: 'hot', component: BodyComponent },
-  {path: 'week', component: BodyComponent },
+  {path: 'featured', component: FeatureComponent },
+  {path: 'hot', component: HotComponent },
+  {path: 'week', component: WeekComponent },
 ];
 @NgModule({
   declarations: [
@@ -35,7 +41,13 @@ const appRoutes: Routes = [
     HeaderComponent,
     BodyComponent,
     IntrestComponent,
-    JobsComponent
+    JobsComponent,
+    FeatureComponent,
+    HotComponent,
+    WeekComponent,
+    TagsComponent,
+    UsersComponent,
+    MonthComponent
   ],
   imports: [
     BrowserModule,
