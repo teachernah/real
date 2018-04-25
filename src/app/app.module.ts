@@ -16,6 +16,7 @@ import { WeekComponent } from './week/week.component';
 import { TagsComponent } from './tags/tags.component';
 import { UsersComponent } from './users/users.component';
 import { MonthComponent } from './month/month.component';
+import { AskquizComponent } from './body/askquiz/askquiz.component';
 
 
 
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   {path: 'featured', component: FeatureComponent },
   {path: 'hot', component: HotComponent },
   {path: 'week', component: WeekComponent },
+  {path: 'askquiz', component: AskquizComponent },
 ];
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ const appRoutes: Routes = [
     WeekComponent,
     TagsComponent,
     UsersComponent,
-    MonthComponent
+    MonthComponent,
+    AskquizComponent
   ],
   imports: [
     BrowserModule,
