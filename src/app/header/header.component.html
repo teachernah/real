@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="./assets/so-icon.png" alt="" class="icon">
   </a>
@@ -9,23 +9,23 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
-      <a class="nav-link" routerLink="./questions" (click)="onSelect('questions')">Questions</a>
-      <a class="nav-link" routerLink="./jobs" (click)="onSelect('job')">Developers Jobs</a>
-      <a class="nav-link" routerLink="./tags" (click)="onSelect('tags')">Tags</a>
-      <a class="nav-link" routerLink="./users" (click)="onSelect('users')">Users</a>
+      <a class="nav-link" routerLink="/questions">Questions</a>
+      <a class="nav-link" routerLink="/jobs" (click)="onSelect($event)">Developers Jobs</a>
+      <a class="nav-link" routerLink="/tags">Tags</a>
+      <a class="nav-link" routerLink="/users">Users</a>
     </ul>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <form class="form-inline">
           <form id="search" action="/search" method="get" class="searchbar" autocomplete="off" role="search">
-            <input name="q" type="text" placeholder="Search…" value="" tabindex="1" autocomplete="off" maxlength="340" class="f-input js-search-field">
+            <input name="q" type="text" placeholder="Search…" value="" tabindex="1" autocomplete="off" maxlength="540" class="f-input js-search-field">
             <button type="submit" aria-label="Search..." class="btn-topbar-primary js-search-submit">
               <svg aria-hidden="true" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18">
                 <path d="M12.86 11.32L18 16.5 16.5 18l-5.18-5.14v-.35a7 7 0 1 1 1.19-1.19h.35zM7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10z"></path>
               </svg>
             </button>
           </form>
-          <a class="nav-link" routerLink="./profile" (click)="onSelect('profile')">
+          <a class="nav-link" routerLink="/profile">
             <div class="gravatar-wrapper-24" title="Naheed Akhtar">
               <img src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=48" alt="" width="24"
                 height="24" class="-avatar js-avatar-me">
@@ -52,7 +52,7 @@
               </a>
             </div>
             <div class="col-2" title="Recent achivements, reputation, badges and privileges earned">
-              <a class="nav-link" routerLink="/achivements">
+              <a class="nav-link" routerLink="achivements">
                 <svg aria-hidden="true" class="svg-icon iconAchievements" width="18" height="18" viewBox="0 0 18 18">
                   <path d="M15 2V1H3v1H0v4c0 1.6 1.4 3 3 3v1c.4 1.5 3 2.6 5
                       3v2H5s-1 1.5-1 2h10c0-.4-1-2-1-2h-3v-2c2-.4 4.6-1.5
@@ -96,11 +96,6 @@
 </nav>
 <br>
 <br>
-
-<app-body></app-body>
-<app-questions *ngIf="loadedFeature === 'intrest'"></app-questions>
-<app-jobs *ngIf="loadedFeature !== 'intrest'"></app-jobs>
-<app-tags *ngIf="loadedFeature !== 'intrest'"></app-tags>
-<app-users *ngIf="loadedFeature !== 'intrest'"></app-users>
-<app-profile *ngIf="loadedFeature !== 'intrest'"></app-profile>
 <!-- <router-outlet></router-outlet> -->
+<app-body></app-body>
+<app-jobs *ngIf="onSelect === 'jobs'"></app-jobs>
