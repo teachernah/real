@@ -18,19 +18,18 @@ import { UsersComponent } from './header/users/users.component';
 import { MonthComponent } from './body/month/month.component';
 import { AskquizComponent } from './askquiz/askquiz.component';
 import { QuestionsComponent } from './header/questions/questions.component';
+import { ProfileComponent } from './header/profile/profile.component';
+import { InboxComponent } from './header/inbox/inbox.component';
+import { AchivementsComponent } from './header/achivements/achivements.component';
 
 
 
 const appRoutes: Routes = [
-  {path: '', component: BodyComponent},
   {path: 'questions', component: QuestionsComponent},
   {path: 'jobs', component: JobsComponent },
   {path: 'tags', component: TagsComponent},
   {path: 'users', component: UsersComponent},
-  {path: 'profile', component: HeaderComponent},
-  {path: 'inbox', component: HeaderComponent},
-  {path: 'achivements', component: HeaderComponent},
-  {path: 'help', component: HeaderComponent},
+  {path: 'profile', component: ProfileComponent},
  {path: 'month', component: MonthComponent },
   {path: 'intrest', component: IntrestComponent },
   {path: 'featured', component: FeatureComponent },
@@ -52,7 +51,10 @@ const appRoutes: Routes = [
     UsersComponent,
     MonthComponent,
     AskquizComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    ProfileComponent,
+    InboxComponent,
+    AchivementsComponent
   ],
   imports: [
     BrowserModule,

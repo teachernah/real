@@ -1,0 +1,35 @@
+.votes{
+    font-size: 20px;
+    color: #848d95;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.status.unanswered{
+    font-size: 20px;
+    color: #848d95;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.views{
+    font-size: 20px;
+    color: #848d95;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.first{
+    margin-left: 40px;
+}
+
+.description{
+    font-size: 25px;
+    color: #005999;
+    
+}
+
+.btn.btn-default{
+    background-color: #E1ECF4;
+}
