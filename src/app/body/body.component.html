@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row nav nav-tabs container">
   <div class="col-4">
     <h3>
       Top Questions
@@ -9,29 +9,33 @@
         <div title="Questions that may be of your interest to you based on your history and tag preference"
           class="questions" role="presentation">
           <a class="nav-link" routerLink="/intrest" 
-            >interseting
+          routerLinkActive="active">interseting
           </a>
         </div>
         <div title="Questions with an active bounty" class="questions">
             <a class="nav-link" routerLink="/featured"
-             >
+            routerLinkActive="active">
               <span class="bounty-indicator-tab">367</span>featured
             </a>
         </div>
         <div title="Questions with the most views, answers and votes over the last few days"
             class="questions">
-            <a class="nav-link" routerLink="/hot">hot</a>
+            <a class="nav-link" routerLink="/hot" routerLinkActive="active">hot</a>
         </div>
         <div title="Questions with the most views, answers and votes this week"
             class="questions">
-            <a routerLink="/week" class="nav-link">week</a>
+            <a routerLink="/week" class="nav-link" routerLinkActive="active">week</a>
         </div>
         <div title="Questions with the most views, answers and votes this month"
             class="questions">
-            <a routerLink="/month" class="nav-link">month</a>
+            <a routerLink="/month" class="nav-link" routerLinkActive="active">month</a>
         </div>
       </ul>
     </div>
-  <button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button>
-  <hr>
-</div>
+    <div class="col-2">
+      <ul class="row"><button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button></ul>
+    </div>
+  </div>
+
+ 
+  

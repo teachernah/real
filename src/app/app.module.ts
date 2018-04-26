@@ -9,20 +9,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { IntrestComponent } from './body/intrest/intrest.component';
-import { JobsComponent } from './jobs/jobs.component';
-import { FeatureComponent } from './feature/feature.component';
-import { HotComponent } from './hot/hot.component';
-import { WeekComponent } from './week/week.component';
-import { TagsComponent } from './tags/tags.component';
-import { UsersComponent } from './users/users.component';
-import { MonthComponent } from './month/month.component';
-import { AskquizComponent } from './body/askquiz/askquiz.component';
+import { JobsComponent } from './header/jobs/jobs.component';
+import { FeatureComponent } from './body/feature/feature.component';
+import { HotComponent } from './body/hot/hot.component';
+import { WeekComponent } from './body/week/week.component';
+import { TagsComponent } from './header/tags/tags.component';
+import { UsersComponent } from './header/users/users.component';
+import { MonthComponent } from './body/month/month.component';
+import { AskquizComponent } from './askquiz/askquiz.component';
+import { QuestionsComponent } from './header/questions/questions.component';
 
 
 
 const appRoutes: Routes = [
-  // {path: '', component: HeaderComponent},
-  {path: 'questions', component: IntrestComponent},
+  {path: '', component: BodyComponent},
+  {path: 'questions', component: QuestionsComponent},
   {path: 'jobs', component: JobsComponent },
   {path: 'tags', component: TagsComponent},
   {path: 'users', component: UsersComponent},
@@ -50,7 +51,8 @@ const appRoutes: Routes = [
     TagsComponent,
     UsersComponent,
     MonthComponent,
-    AskquizComponent
+    AskquizComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,
