@@ -38,9 +38,15 @@ span{
 
 .btn.btn-default{
     background-color: #E1ECF4;
+    margin-top: 20px;
 }
 
 .number{
     background-color: #0077DD;
     color: #fff;
+}
+
+.favourite{
+    margin-top: 50px;
+    color: black; 
 }

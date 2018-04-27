@@ -21,6 +21,7 @@ import { QuestionsComponent } from './header/questions/questions.component';
 import { ProfileComponent } from './header/profile/profile.component';
 import { InboxComponent } from './header/inbox/inbox.component';
 import { AchivementsComponent } from './header/achivements/achivements.component';
+import { BasicDirective } from './basic.directive';
 
 
 
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     QuestionsComponent,
     ProfileComponent,
     InboxComponent,
-    AchivementsComponent
+    AchivementsComponent,
+    BasicDirective
   ],
   imports: [
     BrowserModule,
