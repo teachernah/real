@@ -1,23 +1,23 @@
 .votes{
     font-size: 20px;
     color: #848d95;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
     margin-left: 10px;
 }
 
 .status.unanswered{
     font-size: 20px;
     color: #848d95;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .views{
     font-size: 20px;
     color: #848d95;
-    margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-top: 30px;
+    margin-bottom: 35px; 
 }
 
 .first{
@@ -27,6 +27,7 @@
 .description{
     font-size: 25px;
     color: #005999;
+    margin-top: 20px;
     
 }
 
