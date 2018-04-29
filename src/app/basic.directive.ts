@@ -13,12 +13,9 @@ ngOnInit() {
 }
 
 @HostListener('click') click(eventData: Event) {
-  this.renderer.setStyle(this.elRef.nativeElement, 'border-bottom', '1px solid #F48024');
+  this.renderer.setStyle(this.elRef.nativeElement, 'border-bottom', '2px solid #F48024');
 }
 
-@HostListener('onclick') onclick(eventData: Event) {
-  this.renderer.setStyle(this.elRef.nativeElement, 'margin-top', '20px');
-}
 
 @HostListener('mouseleave') mouseleave(eventData: Event) {
   this.renderer.setStyle(this.elRef.nativeElement, 'border-bottom', '');

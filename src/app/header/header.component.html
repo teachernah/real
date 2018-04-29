@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-static-top navbar-light bg-light" style="padding-top: 0%">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="./assets/so-icon.png" alt="" class="icon">
   </a>
@@ -10,14 +10,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <a class="nav-link" appBasic routerLink="/questions" routerLinkActive="active">Questions</a>
-      <a class="nav-link" routerLink="/jobs" routerLinkActive="active">Developers Jobs</a>
-      <a class="nav-link" routerLink="/tags" routerLinkActive="active">Tags</a>
-      <a class="nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+      <a class="nav-link" appBasic routerLink="/jobs" routerLinkActive="active">Developers Jobs</a>
+      <a class="nav-link" appBasic routerLink="/tags" routerLinkActive="active">Tags</a>
+      <a class="nav-link" appBasic routerLink="/users" routerLinkActive="active">Users</a>
     </ul>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <form class="form-inline">
-          <input type="text" placeholder="Search…" id="search">
+          <div class="form-inline">
+            <input type="text" placeholder="Search…" id="search" autocomplete="off" >
+            <button class="btn btn-primary"><i class="fa fa-search" style="font-size: 35px"></i></button>
+          </div>
           <a class="nav-link" routerLink="/profile">
             <div class="gravatar-wrapper-24" title="Naheed Akhtar">
               <img src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=48" alt="" width="30"

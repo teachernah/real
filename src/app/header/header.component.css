@@ -8,6 +8,7 @@
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     border-bottom: 2px solid #E4E4E4;
     border-top: 3px solid #F48024;
+    position: relative;
 }
 
 .form-control{
@@ -16,7 +17,7 @@
 }
 #search{
     height: 50px;
-    width: 550px;
+    width: 500px;
 }
 
 .questions{
