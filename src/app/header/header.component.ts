@@ -1,4 +1,5 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { SearchDirective } from './../search.directive';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,11 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+@Input() appSearch = 'search';
+SearchDirective;
 
+onClickSearch() {
+  this.appSearch.replace = this.SearchDirective;
+}
 
 }
