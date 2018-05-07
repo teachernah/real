@@ -7,11 +7,5 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-@Output() appSearch = 'search';
-SearchDirective;
-
-onClickSearch() {
-  this.appSearch.replace = this.SearchDirective;
-}
 
 }

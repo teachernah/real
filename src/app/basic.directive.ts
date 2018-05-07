@@ -1,5 +1,5 @@
 import { Directive, Renderer2, OnInit, ElementRef, HostListener } from '@angular/core';
-import { callLifecycleHooksChildrenFirst } from '@angular/core/src/view/provider';
+// import { callLifecycleHooksChildrenFirst } from '@angular/core/src/view/provider';
 
 @Directive({
   selector: '[appBasic]'
@@ -17,7 +17,7 @@ ngOnInit() {
 }
 
 
-@HostListener('mouseleave') mouseleave(eventData: Event) {
+@HostListener('focusout') focusout(eventData: Event) {
   this.renderer.setStyle(this.elRef.nativeElement, 'border-bottom', '');
 }
 

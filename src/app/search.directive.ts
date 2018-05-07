@@ -13,7 +13,7 @@ export class SearchDirective {
     this.width = '700px';
   }
 
-  @HostListener('mouseleave') mouseleave(eventData: Event) {
+  @HostListener('focusout') focusout(eventData: Event) {
     // this.renderer.setStyle(this.elRef.nativeElement, 'width', '500px');
     this.width = '500px';
   }

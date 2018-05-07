@@ -24,6 +24,7 @@ import { AchivementsComponent } from './header/achivements/achivements.component
 import { BasicDirective } from './basic.directive';
 import { SearchDirective } from './search.directive';
 import { UnlessDirective } from './unless.directive';
+import { BodyDirective } from './body.directive';
 
 
 
@@ -60,7 +61,8 @@ const appRoutes: Routes = [
     AchivementsComponent,
     BasicDirective,
     SearchDirective,
-    UnlessDirective
+    UnlessDirective,
+    BodyDirective
   ],
   imports: [
     BrowserModule,
