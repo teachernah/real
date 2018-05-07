@@ -8,17 +8,19 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <a class="nav-link" appBasic routerLink="/questions" routerLinkActive="active">Questions</a>
-      <a class="nav-link" appBasic routerLink="/jobs" routerLinkActive="active">Developers Jobs</a>
-      <a class="nav-link" appBasic routerLink="/tags" routerLinkActive="active">Tags</a>
-      <a class="nav-link" appBasic routerLink="/users" routerLinkActive="active">Users</a>
-    </ul>
+      <div>
+        <ul class="navbar-nav">
+          <a class="nav-link" appBasic routerLink="/questions" routerLinkActive="active">Questions</a>
+          <a class="nav-link" appBasic routerLink="/jobs" routerLinkActive="active">Developers Jobs</a>
+          <a class="nav-link" appBasic routerLink="/tags" routerLinkActive="active">Tags</a>
+          <a class="nav-link" appBasic routerLink="/users" routerLinkActive="active">Users</a>
+        </ul>
+      </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <form class="form-inline">
           <div class="form-inline">
-            <input type="text" placeholder="Search…" id="search" autocomplete="off" >
+            <input appSearch  *ngIf="!isValid" type="text" placeholder="Search…" id="search" autocomplete="off" >
             <button class="btn btn-primary"><i class="fa fa-search" style="font-size: 35px"></i></button>
           </div>
           <a class="nav-link" routerLink="/profile">
@@ -29,7 +31,7 @@
           </a>
           <div class="row">
             <div class="-rep js-header-rep col-1" title="your reputation: 1">1</div>
-            <div class="-badges col-2">
+            <div class="-badges col-2" style="color: #D1A684">
               <span title="1 bronze badge">
                 <span class="badge3">●</span>
                 <span class="badgecount">1</span>
@@ -58,7 +60,7 @@
           </div>
         </form>
       </ul>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <form class="form-inline">
             <input type="text" placeholder="Search…" id="search">
@@ -99,7 +101,7 @@
             </div>
           </form>
         </ul>
-      </div>
+      </div> -->
     </div>
  
 </div>

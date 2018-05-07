@@ -21,5 +21,4 @@ ngOnInit() {
   this.renderer.setStyle(this.elRef.nativeElement, 'border-bottom', '');
 }
 
-
 }

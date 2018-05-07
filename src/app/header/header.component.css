@@ -1,6 +1,6 @@
 .icon{
-    max-height: 50px;
-    max-width: 150px;
+    max-height: 60px;
+    max-width: 160px;
 }
 
 .nav-link{
@@ -21,17 +21,17 @@
     width: 500px;
 }
 
-#navbarSupportedContent{
+/* #navbarSupportedContent{
     padding-top: 3px;
-}
+} */
 .questions{
     border-bottom: 2px solid #F48024;
 }
-ul a{
+/* ul a{
     font-size: 14px;
     display: block;
     color: #535a60;
 }
 ul a:hover{
     background-color : (.165, .84, .44, 1);
-}
+} */

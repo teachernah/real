@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-@Input() appSearch = 'search';
+@Output() appSearch = 'search';
 SearchDirective;
 
 onClickSearch() {
