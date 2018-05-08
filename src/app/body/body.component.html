@@ -1,73 +1,78 @@
-<div class="row col-12 body">
-  <div class="col-3 nav nav-tabs">
-    <h3>
-      Top Questions
-    </h3>
-  </div>
-  <div class="col-5 nav nav-tabs">
-    <ul class="row">
-      <div title="Questions that may be of your interest to you based on your history and tag preference" role="presentation">
-        <a class="nav-link" appBody routerLink="/intrest" routerLinkActive="active">interseting
-        </a>
-      </div>
-      <div title="Questions with an active bounty">
-        <a class="nav-link" appBody routerLink="/featured" routerLinkActive="active">
-          <span class="number"> &nbsp; 367 &nbsp;</span> &nbsp;featured
-        </a>
-      </div>
-      <div title="Questions with the most views, answers and votes over the last few days">
-        <a class="nav-link" appBody routerLink="/hot" routerLinkActive="active">&nbsp;hot</a>
-      </div>
-      <div title="Questions with the most views, answers and votes this week">
-        <a routerLink="/week" appBody class="nav-link" routerLinkActive="active">&nbsp;week</a>
-      </div>
-      <div title="Questions with the most views, answers and votes this month">
-        <a routerLink="/month" appBody class="nav-link" routerLinkActive="active">&nbsp; month&nbsp;&nbsp;</a>
-      </div>
-    </ul>
-  </div>
-  <div class="col-4">
-    <ul class="row pull-right">
-      <button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button>
-    </ul>
-  </div>
-</div>
-<div>
-  <div class="flex-container pull-right">
-    <div class="container">
-      <h5 class="featured pull-left">FEATURED ON META</h5>
-      <br>
-      <br>
-      <hr>
-      <a routerLink="week">
-        <div class="fa fa-folder-o" title="Meta Stack Exchange" style="font-size: 30px; text-decoration: none">
-        </div>
-      </a>
-      <a routerLink="week" class="left"> &nbsp; &nbsp;Left nav, responsive design, and
-        <br> &nbsp; &nbsp; &nbsp; &nbsp; theming next steps</a>
-      <h5 class="featured">HOT META POSTS</h5>
-      <hr>
-      <span title="Vote score(upvotes - downvotes)">93&nbsp;&nbsp;</span>
-      <a routerLink="week" class="left"> Stack Overflow Logo stolen</a>
-      <br>
-      <span title="Vote score(upvotes - downvotes)">14&nbsp;&nbsp;</span>
-      <a routerLink="week" class="left"> What to do with faulty edits?</a>
-      <br>
-      <span title="Vote score(upvotes - downvotes)">7&nbsp;&nbsp; &nbsp;</span>
-      <a routerLink="week" class="left" title="Sharing credentials and providing access to the system, so that the problem…can be resolved">
-        Sharing credentials and providing
-        <br> &nbsp; &nbsp; &nbsp;&nbsp; access to the system, so that the
-        <br>&nbsp;&nbsp; &nbsp; &nbsp; problem…</a>
-      <hr>
-      <h5 class="featured">BLOG</h5>
-      <h3 class="favourite">Favourite Tags
-        <a href="#">edit</a>
+<!-- <div id="wrapper">
+<div id="header"> -->
+  <div class="row col-12 body">
+    <div class="col-3 nav nav-tabs">
+      <h3>
+        Top Questions
       </h3>
-        <button class="btn btn-default">javascript</button>
-        <button class="btn btn-default">angular</button>
-        <button class="btn btn-default">node.js</button>
-        <button class="btn btn-default">css</button>
-        <button class="btn btn-default">html</button>
+    </div>
+    <div class="col-5 nav nav-tabs">
+      <ul class="row">
+        <div title="Questions that may be of your interest to you based on your history and tag preference" role="presentation">
+          <a class="nav-link" appBody routerLink="/intrest" routerLinkActive="active">interseting
+          </a>
+        </div>
+        <div title="Questions with an active bounty">
+          <a class="nav-link" appBody routerLink="/featured" routerLinkActive="active">
+            <span class="number"> &nbsp; 367 &nbsp;</span> &nbsp;featured
+          </a>
+        </div>
+        <div title="Questions with the most views, answers and votes over the last few days">
+          <a class="nav-link" appBody routerLink="/hot" routerLinkActive="active">&nbsp;hot</a>
+        </div>
+        <div title="Questions with the most views, answers and votes this week">
+          <a routerLink="/week" appBody class="nav-link" routerLinkActive="active">&nbsp;week</a>
+        </div>
+        <div title="Questions with the most views, answers and votes this month">
+          <a routerLink="/month" appBody class="nav-link" routerLinkActive="active">&nbsp; month&nbsp;&nbsp;</a>
+        </div>
+      </ul>
+    </div>
+    <div class="col-4">
+      <ul class="row pull-right">
+        <button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button>
+      </ul>
     </div>
   </div>
-</div>
+  <div>
+    <div class="flex-container pull-right">
+      <div class="container">
+        <h5 class="featured pull-left">FEATURED ON META</h5>
+        <br>
+        <br>
+        <hr>
+        <a routerLink="week">
+          <div class="fa fa-folder-o" title="Meta Stack Exchange" style="font-size: 30px; text-decoration: none">
+          </div>
+        </a>
+        <a routerLink="week" class="left"> &nbsp; &nbsp;Left nav, responsive design, and
+          <br> &nbsp; &nbsp; &nbsp; &nbsp; theming next steps</a>
+        <h5 class="featured">HOT META POSTS</h5>
+        <hr>
+        <span title="Vote score(upvotes - downvotes)">93&nbsp;&nbsp;</span>
+        <a routerLink="week" class="left"> Stack Overflow Logo stolen</a>
+        <br>
+        <span title="Vote score(upvotes - downvotes)">14&nbsp;&nbsp;</span>
+        <a routerLink="week" class="left"> What to do with faulty edits?</a>
+        <br>
+        <span title="Vote score(upvotes - downvotes)">7&nbsp;&nbsp; &nbsp;</span>
+        <a routerLink="week" class="left" title="Sharing credentials and providing access to the system, so that the problem…can be resolved">
+          Sharing credentials and providing
+          <br> &nbsp; &nbsp; &nbsp;&nbsp; access to the system, so that the
+          <br>&nbsp;&nbsp; &nbsp; &nbsp; problem…</a>
+        <hr>
+        <h5 class="featured">BLOG</h5>
+        <h3 class="favourite">Favourite Tags
+          <a href="#">edit</a>
+        </h3>
+          <button class="btn btn-default">javascript</button>
+          <button class="btn btn-default">angular</button>
+          <button class="btn btn-default">node.js</button>
+          <button class="btn btn-default">css</button>
+          <button class="btn btn-default">html</button>
+      </div>
+    </div>
+  </div>
+  
+<!-- </div>
+</div> -->
