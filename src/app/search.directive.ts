@@ -10,11 +10,11 @@ export class SearchDirective {
 
   @HostListener('click') click(eventData: Event) {
     // this.renderer.setStyle(this.elRef.nativeElement, 'width', '700px');
-    this.width = '700px';
+    this.width = '800px';
   }
 
   @HostListener('focusout') focusout(eventData: Event) {
     // this.renderer.setStyle(this.elRef.nativeElement, 'width', '500px');
-    this.width = '500px';
+    this.width = '600px';
   }
 }

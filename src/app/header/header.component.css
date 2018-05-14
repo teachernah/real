@@ -1,6 +1,7 @@
 .icon{
     max-height: 60px;
     max-width: 160px;
+    margin-left: 30px;
 }
 
 .nav-link{
@@ -9,7 +10,7 @@
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     border-bottom: 2px solid #E4E4E4;
     border-top: 3px solid #F48024;
-    position: relative;
+    position: static;
 }
 
 .form-control{
@@ -18,7 +19,7 @@
 }
 #search{
     height: 50px;
-    width: 500px;
+    width: 600px;
 }
 
 ul a{
@@ -27,4 +28,36 @@ ul a{
 }
 ul a:hover{
     background-color: lightgrey;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    width: 450px;
+    height: 450px;
+    background-color: #FFF8DC;
+    border: 1px solid #E0DCBF;
+    color: #9C988B;
+    margin-right: 20px;
+}
+
+.favourite{
+    margin-top: 50px;
+    color: black; 
+}
+
+.left{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.featured{
+    margin-top: 20px;
+}
+
+.btn.btn-default{
+    background-color: #E1ECF4;
+    margin-top: 20px;
 }

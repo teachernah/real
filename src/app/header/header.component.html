@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" data-toggle="sticky-onscroll" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-toggle="sticky-onscroll" role="navigation" id="navbar">
   <a class="navbar-brand" href="#">
     <img src="./assets/so-icon.png" alt="" class="icon">
   </a>
@@ -27,7 +27,7 @@
               (click)="toggleNavebar(false)" (focusout)="toggleNavebar(true)">
             <button class="btn btn-primary" *ngIf="showSearch" >
               <i class="fa fa-search" style="font-size: 35px"> </i>
-            </button>&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
           </div>
           <a class="nav-link" routerLink="/profile">
             <div class="gravatar-wrapper-24" title="Naheed Akhtar">
@@ -37,9 +37,9 @@
                 height="40" class="-avatar js-avatar-me">
             </div>
           </a>
-        <div style="font-size: 20px" title="your reputation: 1">&nbsp;1&nbsp;</div>
+        <div style="font-size: 20px" title="your reputation: 1">&nbsp;1&nbsp;&nbsp;</div>
         <div style="color: #D1A684; font-size: 20px">
-          <span title="1 bronze badge">&nbsp;●<span>1&nbsp;&nbsp;</span></span>
+          <span title="1 bronze badge">&nbsp;●<span>1&nbsp;&nbsp;&nbsp; </span></span>
         </div>
           <div class="row">
             <div class="col" title="Recent inbox messeges">
@@ -48,17 +48,17 @@
               </a>
             </div>
             <div class="col" title="Recent achivements, reputation, badges and privileges earned">
-              <a class="nav-link" routerLink="achivements">
+              <a class="nav-link" routerLink="achivements">&nbsp; &nbsp;
                 <i class="fa fa-trophy" style="font-size: 40px"></i>
               </a>
             </div>
             <div class="col" title="Help center and other resouces">
-              <a class="nav-link" routerLink="/help">
+              <a class="nav-link" routerLink="/help">&nbsp; &nbsp;
                 <i class="fa fa-question-circle" style="font-size: 40px"></i>
               </a>
             </div>
             <div class="col" title="A list of all 173 stack exchange sites">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#"> &nbsp; &nbsp;
                 <i class="fa fa-stack-exchange" style="font-size: 40px"></i>
               </a>
             </div>
@@ -70,3 +70,48 @@
 </nav>
 <br>
 <br>
+
+<div class="pull-right">
+   <button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button>
+</div>
+  <div>
+      <div class="flex-container pull-right">
+        <div class="container">
+          <h5 class="featured pull-left">FEATURED ON META</h5>
+          <br>
+          <br>
+          <hr>
+          <a routerLink="week">
+            <div class="fa fa-folder-o" title="Meta Stack Exchange"
+             style="font-size: 30px; text-decoration: none">
+            </div>
+          </a>
+          <a routerLink="week" class="left"> &nbsp; &nbsp;Left nav, responsive design, and
+            <br> &nbsp; &nbsp; &nbsp; &nbsp; theming next steps</a>
+          <h5 class="featured">HOT META POSTS</h5>
+          <hr>
+          <span title="Vote score(upvotes - downvotes)">93&nbsp;&nbsp;</span>
+          <a routerLink="week" class="left"> Stack Overflow Logo stolen</a>
+          <br>
+          <span title="Vote score(upvotes - downvotes)">14&nbsp;&nbsp;</span>
+          <a routerLink="week" class="left"> What to do with faulty edits?</a>
+          <br>
+          <span title="Vote score(upvotes - downvotes)">7&nbsp;&nbsp; &nbsp;</span>
+          <a routerLink="week" class="left" title=
+           "Sharing credentials and providing access to the system, so that the problem…can be resolved">
+            Sharing credentials and providing
+            <br> &nbsp; &nbsp; &nbsp;&nbsp; access to the system, so that the
+            <br>&nbsp;&nbsp; &nbsp; &nbsp; problem…</a>
+          <hr>
+          <h5 class="featured">BLOG</h5>
+          <h3 class="favourite">Favourite Tags
+            <a href="#">edit</a>
+          </h3>
+            <button class="btn btn-default">javascript</button>
+            <button class="btn btn-default">angular</button>
+            <button class="btn btn-default">node.js</button>
+            <button class="btn btn-default">css</button>
+            <button class="btn btn-default">html</button>
+        </div>
+      </div>
+    </div>

@@ -17,4 +17,5 @@ export class HeaderComponent {
   toggleNavebar(value: boolean) {
     this.navebarVisibility = value;
   }
+
 }

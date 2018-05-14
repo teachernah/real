@@ -7,15 +7,15 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
-import { IntrestComponent } from './body/intrest/intrest.component';
+import { BodyComponent } from './header/body/body.component';
+import { IntrestComponent } from './header/body/intrest/intrest.component';
 import { JobsComponent } from './header/jobs/jobs.component';
-import { FeatureComponent } from './body/feature/feature.component';
-import { HotComponent } from './body/hot/hot.component';
-import { WeekComponent } from './body/week/week.component';
+import { FeatureComponent } from './header/body/feature/feature.component';
+import { HotComponent } from './header/body/hot/hot.component';
+import { WeekComponent } from './header/body/week/week.component';
 import { TagsComponent } from './header/tags/tags.component';
 import { UsersComponent } from './header/users/users.component';
-import { MonthComponent } from './body/month/month.component';
+import { MonthComponent } from './header/body/month/month.component';
 import { AskquizComponent } from './askquiz/askquiz.component';
 import { QuestionsComponent } from './header/questions/questions.component';
 import { ProfileComponent } from './header/profile/profile.component';
@@ -29,6 +29,7 @@ import { BodyDirective } from './body.directive';
 
 
 const appRoutes: Routes = [
+  {path: 'body', component: BodyComponent},
   {path: 'questions', component: QuestionsComponent},
   {path: 'jobs', component: JobsComponent },
   {path: 'tags', component: TagsComponent},

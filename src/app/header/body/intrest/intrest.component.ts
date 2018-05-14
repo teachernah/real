@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-intrest',
@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intrest.component.css']
 })
 export class IntrestComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
