@@ -1,16 +1,15 @@
 .icon{
     max-height: 60px;
     max-width: 160px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .nav-link{
-    font-size: 25px;
+    font-size: 20px;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light{
     border-bottom: 2px solid #E4E4E4;
     border-top: 3px solid #F48024;
-    position: static;
 }
 
 .form-control{
@@ -41,6 +40,7 @@ ul a:hover{
     border: 1px solid #E0DCBF;
     color: #9C988B;
     margin-right: 20px;
+    margin-top: 30px;
 }
 
 .favourite{
@@ -60,4 +60,25 @@ ul a:hover{
 .btn.btn-default{
     background-color: #E1ECF4;
     margin-top: 20px;
+}
+
+.btn.btn-primary.askquiz{
+    margin-left: 320px;
+}
+
+.log{
+    background-color: transparent;
+    font-size: 15px;
+    border-color: transparent;
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.log :hover{
+    background-color: aquamarine;
+}
+
+.signup{
+    margin-top: 10px;
 }

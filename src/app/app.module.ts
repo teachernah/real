@@ -29,7 +29,7 @@ import { BodyDirective } from './body.directive';
 
 
 const appRoutes: Routes = [
-  {path: 'body', component: BodyComponent},
+  // {path: 'body', component: BodyComponent},
   {path: 'questions', component: QuestionsComponent},
   {path: 'jobs', component: JobsComponent },
   {path: 'tags', component: TagsComponent},

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" data-toggle="sticky-onscroll" role="navigation" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="./assets/so-icon.png" alt="" class="icon">
   </a>
@@ -22,45 +22,50 @@
         <form class="form-inline">
           <div class="form-inline">
             <input appSearch type="text" placeholder="Search…" id="search" autocomplete="off"
-             class=".hidden-lg-down"
               (click)="toggleSearchButton(true)" (focusout)="toggleSearchButton(false)"
               (click)="toggleNavebar(false)" (focusout)="toggleNavebar(true)">
             <button class="btn btn-primary" *ngIf="showSearch" >
               <i class="fa fa-search" style="font-size: 35px"> </i>
-            </button>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+            </button>
           </div>
           <a class="nav-link" routerLink="/profile">
             <div class="gravatar-wrapper-24" title="Naheed Akhtar">
               <img src=
                "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=48"
-               alt="" width="40"
+               alt="" width="35"
                 height="40" class="-avatar js-avatar-me">
             </div>
           </a>
-        <div style="font-size: 20px" title="your reputation: 1">&nbsp;1&nbsp;&nbsp;</div>
-        <div style="color: #D1A684; font-size: 20px">
-          <span title="1 bronze badge">&nbsp;●<span>1&nbsp;&nbsp;&nbsp; </span></span>
+        <div style="font-size: 20px" title="your reputation: 1">1</div>
+        <div style="color: #D1A684; font-size: 30px">
+          <span title="1 bronze badge">●<span>1</span></span>
         </div>
           <div class="row">
             <div class="col" title="Recent inbox messeges">
               <a class="nav-link" routerLink="/inbox">
-                <i class="fa fa-inbox" style="font-size: 40px"></i>
+                <i class="fa fa-inbox" style="font-size: 35px"></i>
               </a>
             </div>
             <div class="col" title="Recent achivements, reputation, badges and privileges earned">
-              <a class="nav-link" routerLink="achivements">&nbsp; &nbsp;
-                <i class="fa fa-trophy" style="font-size: 40px"></i>
+              <a class="nav-link" routerLink="achivements">
+                <i class="fa fa-trophy" style="font-size: 35px"></i>
               </a>
             </div>
             <div class="col" title="Help center and other resouces">
-              <a class="nav-link" routerLink="/help">&nbsp; &nbsp;
-                <i class="fa fa-question-circle" style="font-size: 40px"></i>
+              <a class="nav-link" routerLink="/help">
+                <i class="fa fa-question-circle" style="font-size: 35px"></i>
               </a>
             </div>
             <div class="col" title="A list of all 173 stack exchange sites">
-              <a class="nav-link" href="#"> &nbsp; &nbsp;
-                <i class="fa fa-stack-exchange" style="font-size: 40px"></i>
+              <a class="nav-link" href="#">
+                <i class="fa fa-stack-exchange" style="font-size: 35px"></i>
               </a>
+            </div>
+            <div class="col">
+            <a class="log">Log in</a>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary signup">Sign up</button>
             </div>
           </div>
         </form>
@@ -71,19 +76,31 @@
 <br>
 <br>
 
-<div class="pull-right">
-   <button class="btn btn-primary" routerLink="/askquiz">Ask Questions</button>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis maiores laborum aliquid, doloribus voluptatum quibusdam quam voluptatem optio commodi saepe velit et harum beatae, deleniti, nesciunt quisquam voluptates laboriosam!</p>
+    </div>
+    <div class="col">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim dolore labore cupiditate alias doloremque, minus obcaecati est quod quasi, unde similique tempora sint velit suscipit, ipsam debitis nulla cumque?</p>
+    </div>
+  </div>
 </div>
+
+
+<div class="pull-right">
+  <button class="btn btn-primary askquiz" routerLink="/askquiz">Ask Questions</button>
   <div>
-      <div class="flex-container pull-right">
-        <div class="container">
-          <h5 class="featured pull-left">FEATURED ON META</h5>
-          <br>
-          <br>
-          <hr>
-          <a routerLink="week">
+    <div class="flex-container pull-right">
+      <div class="container">
+        <h5 class="featured pull-left">FEATURED ON META</h5> 
+        <br>
+        <br>
+        <hr>
+        <a routerLink="week">
             <div class="fa fa-folder-o" title="Meta Stack Exchange"
-             style="font-size: 30px; text-decoration: none">
+            style="font-size: 30px; text-decoration: none">
             </div>
           </a>
           <a routerLink="week" class="left"> &nbsp; &nbsp;Left nav, responsive design, and
@@ -95,23 +112,25 @@
           <br>
           <span title="Vote score(upvotes - downvotes)">14&nbsp;&nbsp;</span>
           <a routerLink="week" class="left"> What to do with faulty edits?</a>
-          <br>
-          <span title="Vote score(upvotes - downvotes)">7&nbsp;&nbsp; &nbsp;</span>
-          <a routerLink="week" class="left" title=
-           "Sharing credentials and providing access to the system, so that the problem…can be resolved">
-            Sharing credentials and providing
-            <br> &nbsp; &nbsp; &nbsp;&nbsp; access to the system, so that the
-            <br>&nbsp;&nbsp; &nbsp; &nbsp; problem…</a>
-          <hr>
-          <h5 class="featured">BLOG</h5>
-          <h3 class="favourite">Favourite Tags
-            <a href="#">edit</a>
-          </h3>
-            <button class="btn btn-default">javascript</button>
-            <button class="btn btn-default">angular</button>
-            <button class="btn btn-default">node.js</button>
-            <button class="btn btn-default">css</button>
-            <button class="btn btn-default">html</button>
-        </div>
+         <br>
+        <span title="Vote score(upvotes - downvotes)">7&nbsp;&nbsp; &nbsp;</span>
+        <a routerLink="week" class="left" title=
+        "Sharing credentials and providing access to the system, so that the problem…can be resolved">
+        Sharing credentials and providing
+        <br> &nbsp; &nbsp; &nbsp;&nbsp; access to the system, so that the
+        <br>&nbsp;&nbsp; &nbsp; &nbsp; problem…</a>
+        <hr>
+        <h5 class="featured">BLOG</h5>
+        <h3 class="favourite">Favourite Tags
+        <a href="#">edit</a>
+        </h3>
+        <button class="btn btn-default">javascript</button>
+        <button class="btn btn-default">angular</button>
+        <button class="btn btn-default">node.js</button>
+        <button class="btn btn-default">css</button>
+        <button class="btn btn-default">html</button>
       </div>
     </div>
+  </div>
+</div>
+

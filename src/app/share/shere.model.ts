@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { HeaderComponent } from '../header/header.component';
-import { BodyComponent } from '../body/body.component';
+import { BodyComponent } from '../header/body/body.component';
 
 const appRoutes: Routes = [
     {path: 'month', component: BodyComponent },
