@@ -2,31 +2,26 @@
   <a class="navbar-brand" href="#">
     <img src="./assets/so-icon.png" alt="" class="icon">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse"
-   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div>
         <ul class="navbar-nav" *ngIf="navebarVisibility">
           <a class="nav-link" appBasic routerLink="/questions" routerLinkActive="active">Questions</a>
-          <a class="nav-link" appBasic routerLink="/jobs" routerLinkActive="active">Developers Jobs</a>
+          <a class="nav-link" appBasic routerLink="/jobs" routerLinkActive="active">Developersjob</a>
           <a class="nav-link" appBasic routerLink="/tags" routerLinkActive="active">Tags</a>
           <a class="nav-link" appBasic routerLink="/users" routerLinkActive="active">Users</a>
         </ul>
       </div>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse input-group" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <form class="form-inline">
           <div class="form-inline">
             <input appSearch type="text" placeholder="Search…" id="search" autocomplete="off"
               (click)="toggleSearchButton(true)" (focusout)="toggleSearchButton(false)"
-              (click)="toggleNavebar(false)" (focusout)="toggleNavebar(true)">
-            <button class="btn btn-primary" *ngIf="showSearch" >
+              (click)="toggleNavebar(false)" (focusout)="toggleNavebar(true)"
+              aria-describedby="Addon1">
+            <span class="btn btn-primary" *ngIf="showSearch" id="Addon1">
               <i class="fa fa-search" style="font-size: 35px"> </i>
-            </button>
+            </span>
           </div>
           <a class="nav-link" routerLink="/profile">
             <div class="gravatar-wrapper-24" title="Naheed Akhtar">
@@ -36,7 +31,7 @@
                 height="40" class="-avatar js-avatar-me">
             </div>
           </a>
-        <div style="font-size: 20px" title="your reputation: 1">1</div>
+        <div style="font-size: 30px" title="your reputation: 1">1</div>
         <div style="color: #D1A684; font-size: 30px">
           <span title="1 bronze badge">●<span>1</span></span>
         </div>
@@ -61,12 +56,7 @@
                 <i class="fa fa-stack-exchange" style="font-size: 35px"></i>
               </a>
             </div>
-            <div class="col">
-            <a class="log">Log in</a>
-            </div>
-            <div class="col">
-              <button class="btn btn-primary signup">Sign up</button>
-            </div>
+
           </div>
         </form>
       </ul>
@@ -76,25 +66,12 @@
 <br>
 <br>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis maiores laborum aliquid, doloribus voluptatum quibusdam quam voluptatem optio commodi saepe velit et harum beatae, deleniti, nesciunt quisquam voluptates laboriosam!</p>
-    </div>
-    <div class="col">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim dolore labore cupiditate alias doloremque, minus obcaecati est quod quasi, unde similique tempora sint velit suscipit, ipsam debitis nulla cumque?</p>
-    </div>
-  </div>
-</div>
-
-
 <div class="pull-right">
   <button class="btn btn-primary askquiz" routerLink="/askquiz">Ask Questions</button>
   <div>
     <div class="flex-container pull-right">
       <div class="container">
-        <h5 class="featured pull-left">FEATURED ON META</h5> 
+        <h5 class="featured pull-left">FEATURED ON META</h5>
         <br>
         <br>
         <hr>
@@ -133,4 +110,3 @@
     </div>
   </div>
 </div>
-

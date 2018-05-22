@@ -12,13 +12,13 @@
     border-top: 3px solid #F48024;
 }
 
-.form-control{
-    width: 400px;
-    height: 50px;
-}
 #search{
     height: 50px;
     width: 600px;
+}
+
+#search:hover{
+    border: 2px solid #7fcaff;
 }
 
 ul a{
@@ -64,21 +64,4 @@ ul a:hover{
 
 .btn.btn-primary.askquiz{
     margin-left: 320px;
-}
-
-.log{
-    background-color: transparent;
-    font-size: 15px;
-    border-color: transparent;
-    margin-top: 10px;
-    color: blue;
-    cursor: pointer;
-}
-
-.log :hover{
-    background-color: aquamarine;
-}
-
-.signup{
-    margin-top: 10px;
 }
