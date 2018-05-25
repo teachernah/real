@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../auth/auth.service';
+
 
 @Component({
   selector: 'app-feature',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature.component.css']
 })
 export class FeatureComponent implements OnInit {
+  email: string;
+  password: string;
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
+  }
+
+  signup() {
+    this.authService.signup(this.email, this.password);
+    this.email = this.password = '';
+  }
+
+  login() {
+    this.authService.login(this.email, this.password);
+    this.email = this.password = '';
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
 }

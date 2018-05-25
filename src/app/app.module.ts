@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -25,6 +29,8 @@ import { BasicDirective } from './basic.directive';
 import { SearchDirective } from './search.directive';
 import { UnlessDirective } from './unless.directive';
 import { BodyDirective } from './body.directive';
+import {  HttpModule } from '@angular/http';
+import { AuthService } from './auth/auth.service';
 
 
 
@@ -67,7 +73,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
@@ -75,7 +86,7 @@ const appRoutes: Routes = [
     ),
     AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [Storage, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
